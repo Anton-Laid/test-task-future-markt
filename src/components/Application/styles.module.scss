@@ -1,0 +1,66 @@
+.application {
+  width: 480px;
+  padding-top: 108px;
+  margin: 0 auto;
+  color: var(--colors-interface-white);
+
+  &__btn_max {
+    margin-top: 89px;
+    width: 380px;
+    height: 71px;
+  }
+
+  &__btn_min {
+    margin-top: 55px;
+    width: 251px;
+    height: 47px;
+  }
+
+  &__title {
+    font-size: clamp(20px, 5vw, 50px);
+    font-weight: 600;
+    line-height: 148.8%;
+  }
+
+  &__input {
+    margin-top: clamp(50px, 10%, 64px);
+  }
+
+  &__submit {
+    margin-top: clamp(55px, 10%, 89px);
+  }
+
+  &__btn-text_min {
+    padding-left: 11px;
+    font-size: 14px;
+  }
+
+  &__btn-text_max {
+    padding-left: 40px;
+    font-size: 18px;
+  }
+
+  &__btn-box_min {
+    width: 44px;
+  }
+
+  &__btn-box_max {
+    width: 67px;
+  }
+
+  &__btn-arrow_max {
+    right: 13px;
+    bottom: 13px;
+  }
+
+  &__btn-arrow_min {
+    right: 9px;
+    bottom: 9px;
+  }
+}
+
+@media (max-width: 550px) {
+  .application {
+    width: 260px;
+  }
+}

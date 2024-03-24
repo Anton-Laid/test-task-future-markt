@@ -1,0 +1,30 @@
+:root {
+  --colors-interface-white: #ffffff;
+  --colors-interface-cobalt-blue: #07305d;
+  --colors-interface-dark-blue: #133457;
+  --colors-interface-dark-blue-btn: #0b3461;
+  --colors-interface-portal: #0f1d4599;
+  --error-color: #d80000;
+}
+
+img,
+video,
+canvas {
+  overflow: hidden;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.text_type_regular {
+  font-weight: 400;
+}
+
+.text_type_bold {
+  font-weight: 600;
+}

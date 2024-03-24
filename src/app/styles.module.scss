@@ -1,0 +1,49 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/image/background.svg);
+  overflow: hidden;
+
+  &__overlay {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  &__mentor {
+    width: 525px;
+    height: 808px;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .app {
+    &__overlay {
+      width: 92%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .app {
+    &__mentor {
+      right: 3vw;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    &__mentor {
+      width: 275px;
+      height: 432px;
+      top: 20px;
+    }
+  }
+}

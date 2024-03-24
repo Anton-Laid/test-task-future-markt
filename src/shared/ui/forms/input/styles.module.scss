@@ -1,0 +1,29 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input {
+  font-size: 20px;
+  width: 480px;
+  height: 36px;
+  padding-bottom: 12px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--colors-interface-white);
+  opacity: 0.8;
+  outline: 0;
+  color: var(--colors-interface-white);
+}
+
+.input_err {
+  border-bottom: 1px solid var(--error-color);
+}
+
+@media (max-width: 550px) {
+  .input {
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+}

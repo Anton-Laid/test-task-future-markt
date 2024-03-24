@@ -1,0 +1,51 @@
+.btn {
+  text-align: start;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid var(--colors-interface-white);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &:active:not(:disabled) {
+    scale: 0.98;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  &_white {
+    background-color: var(--colors-interface-white);
+  }
+
+  &__text {
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--colors-interface-white);
+
+    &_blue {
+      color: var(--colors-interface-cobalt-blue);
+    }
+  }
+
+  &__box-arrow {
+    height: 110%;
+    border-left: 2px solid var(--colors-interface-white);
+
+    &_blue {
+      border-color: var(--colors-interface-dark-blue-btn);
+    }
+  }
+
+  &__arrow-position {
+    position: absolute;
+  }
+}

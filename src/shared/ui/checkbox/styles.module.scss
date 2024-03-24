@@ -1,0 +1,36 @@
+.container {
+  margin-top: 110px;
+  cursor: pointer;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  color: var(--colors-interface-white);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 400;
+  line-height: 128.8%;
+
+  &__input {
+    display: none;
+  }
+
+  &__svg {
+    overflow: visible;
+  }
+
+  &__path {
+    fill: none;
+    stroke: var(--colors-interface-white);
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+  }
+
+  &__input:checked ~ &__svg &__path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+  }
+}

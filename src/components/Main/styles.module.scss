@@ -1,0 +1,103 @@
+.main {
+  width: 100%;
+  margin-top: clamp(65px, 10%, 175px);
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    font-size: clamp(25px, 5vw, 65px);
+    width: clamp(252px, 85vw, 747px);
+    color: var(--colors-interface-white);
+    margin-bottom: clamp(35px, 10%, 53px);
+    z-index: 1;
+  }
+
+  &__description {
+    position: relative;
+    font-size: clamp(11px, 10vw, 16px);
+    opacity: 0.5;
+    color: var(--colors-interface-white);
+    width: clamp(200px, 80vw, 747px);
+    padding-left: clamp(5.5px, 2vw, 23px);
+    border-left: 1px solid var(--colors-interface-white);
+    margin-bottom: clamp(50px, 10%, 64px);
+    z-index: 1;
+  }
+
+  &__container-btn {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__container-info {
+    margin-top: 112px;
+    display: flex;
+    gap: 230px;
+    z-index: 1;
+  }
+
+  &__btn_max {
+    width: 380px;
+    height: 71px;
+  }
+
+  &__btn_min {
+    width: 126px;
+    height: 30px;
+  }
+
+  &__mentor {
+    width: 275px;
+    height: 432px;
+    position: absolute;
+    bottom: -10px;
+    right: -110px;
+  }
+
+  &__btn-text_max {
+    width: 270px;
+    padding-left: 24px;
+    font-size: 17px;
+  }
+
+  &__btn-text_min {
+    width: 57px;
+    height: 10px;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+
+  &__btn-box_min {
+    width: 26px;
+  }
+
+  &__btn-box_max {
+    width: 71px;
+  }
+
+  &__btn-arrow_min {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  &__btn-arrow_max {
+    bottom: 13px;
+    right: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    &__container-btn {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__container-info {
+      margin-top: 92px;
+      gap: 45px;
+    }
+  }
+}

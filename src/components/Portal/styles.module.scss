@@ -1,0 +1,57 @@
+.portal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--colors-interface-portal);
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  transition: left 0.8s;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &_active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 612px;
+    height: 100vh;
+    background-color: #0f1d45;
+    transition: left 0.8s;
+
+    &_active {
+      left: 0;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  &__btn-close:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 615px) {
+  .portal {
+    &__container {
+      width: 100%;
+    }
+
+    &__btn-close {
+      top: 26px;
+      right: 26px;
+    }
+  }
+}

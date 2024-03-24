@@ -1,0 +1,41 @@
+.message {
+  width: 490px;
+  height: 826px;
+  color: var(--colors-interface-white);
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    width: 241px;
+    margin: 0 auto 98px;
+    padding-top: clamp(72px, 20%, 160px);
+    font-size: clamp(20px, 10vw, 50px);
+  }
+
+  &__discription {
+    margin: 0 auto;
+    width: 400px;
+    font-size: clamp(18px, 10vw, 40px);
+  }
+
+  &__logo_position {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .message {
+    width: 85%;
+
+    &__title {
+      width: 90%;
+    }
+
+    &__discription {
+      width: 100%;
+    }
+  }
+}
